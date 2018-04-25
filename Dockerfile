@@ -11,6 +11,7 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys D744D55EACDA69FF \
  && apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     fusiondirectory-schema=${FUSIONDIRECTORY_VERSION} \
+    fusiondirectory-plugin-audit-schema=${FUSIONDIRECTORY_VERSION} \
     fusiondirectory-plugin-argonaut-schema=${FUSIONDIRECTORY_VERSION} \
     fusiondirectory-plugin-autofs-schema=${FUSIONDIRECTORY_VERSION} \
     fusiondirectory-plugin-gpg-schema=${FUSIONDIRECTORY_VERSION} \
